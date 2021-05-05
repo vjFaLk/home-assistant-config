@@ -1,4 +1,15 @@
+# Overview
+
+This is a breakdown of my current Home Automation setup. It's broken down into three major sections - 
+
+- Hardware Integrations
+- Software Integrations
+- External Integrations
+
+
 # Hardware Integrations
+
+Of course, end of the day all integrations are technically "software" but these integrations rely on you having a specific piece of hardware, so I decided it categorize it so.
 
 ## Lighting
 
@@ -33,7 +44,7 @@ I made a custom LED Strip that I stuck behind my monitor. You can find more deta
 
 ## Media
 
-### PS4
+### Playstation 4
 
 Integration link - [Sony Playstation 4](https://www.home-assistant.io/integrations/ps4/). This integration allows you to control the power state of the PS4. Along with that, you can also select which game you want to play from HA itself, which then turns on the PS4, and starts the game. 
 
@@ -67,7 +78,7 @@ My phone runs the [official HA app](https://play.google.com/store/apps/details?i
 
 ## Other
 
-### [Broadlink RM Mini](https://www.amazon.in/Broadlink/dp/B08243KL64/ref=sr_1_1?dchild=1&keywords=broadlink+rm+mini&qid=1619672837&sr=8-1)
+### [Broadlink RM Mini IR Blaster](https://www.amazon.in/Broadlink/dp/B08243KL64/ref=sr_1_1?dchild=1&keywords=broadlink+rm+mini&qid=1619672837&sr=8-1)
 
 Integration link - [Broadlink](https://www.home-assistant.io/integrations/broadlink/)
 
@@ -83,11 +94,15 @@ Integration link - [Octoprint](https://www.home-assistant.io/integrations/octopr
 
 I have a [Creality Ender 3 v2](https://www.creality.com/goods-detail/ender-3-v2-3d-printer) FDM 3D Printer. Octoprint is a fantastic OSS project that allows you to remotely control and monitor your FDM 3D Printer. It also integrates with HA allowing me to monitor my prints from the HA dashboard and also create automations like notifying me when my print is finished. If you have a camera setup, you can also embed that feed into the dashboard using the [MJPEG Integration](https://www.home-assistant.io/integrations/mjpeg/).
 
+![image](https://user-images.githubusercontent.com/6697133/117115954-632f7700-adab-11eb-91bd-8e6aa76f687c.png)
+
 ### **Xiaomi Air Purifier**
 
 Integration link - [Xiaomi Miio](https://www.home-assistant.io/integrations/xiaomi_miio/)
 
 I have a air purifier in my bedroom. The HA integration allows me to control the fan setting for the purifier. Along with that the purifier has sensors for temperature, humidity and AQI that I fetch into HA to display on a dashboard. 
+
+![image](https://user-images.githubusercontent.com/6697133/117116264-c6210e00-adab-11eb-8fa9-bbb66eb4a11c.png)
 
 # Software Integrations
 
@@ -95,7 +110,10 @@ I have a air purifier in my bedroom. The HA integration allows me to control the
 
 Integration link - [Spotify](https://www.home-assistant.io/integrations/spotify/)
 
-Pretty straightforward integration. I use this integration to be able to control playback from any device that I can access the dashboard. This is useful when music is playing on speakers. This integration also allows you to browse Spotify from HA's UI and play media on any devices that you may have integrated
+Pretty straightforward integration. I use this integration to be able to control playback from any device that I can access the dashboard. This is useful when music is playing on speakers. Along with that I can change the device the music is playing on from the dashboard itself. This integration also allows you to browse Spotify from HA's UI and play media on any devices that you may have integrated
+
+![image](https://user-images.githubusercontent.com/6697133/117116427-fd8fba80-adab-11eb-9222-40b4cff39083.png)
+
 
 ### Google Calendar
 
@@ -115,10 +133,14 @@ Integration link - [Uptime Robot](https://www.home-assistant.io/integrations/upt
 
 Uptime Robot pings a certain IP / Domain every x number of minutes and monitors your services. It wouldn't make sense to self-host a monitoring service at home so I use a hosted service to fetch the uptime data and store it in HA which is then fed into my dashboard. 
 
+![image](https://user-images.githubusercontent.com/6697133/117116611-30d24980-adac-11eb-96b7-54372d8a18be.png)
+
+
 ### [System Monito](https://www.home-assistant.io/integrations/systemmonitor/)r
 
 Integration link - [System Monitor](https://www.home-assistant.io/integrations/systemmonitor/) 
 
 This pulls data from the system HA is installed on. For my setup I fetch the CPU Usage, and network in and out. This gives me a simple but useful way to monitor my server from the HA dashboard. 
 
-#
+![image](https://user-images.githubusercontent.com/6697133/117116664-4182bf80-adac-11eb-8c72-d2c45f952a4b.png)
+
