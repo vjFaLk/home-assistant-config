@@ -138,7 +138,7 @@ Integration link - [System Monitor](https://www.home-assistant.io/integrations/s
 
 This pulls data from the system HA is installed on. For my setup I fetch the CPU Usage, and network in and out. This gives me a simple but useful way to monitor my server from the HA dashboard.
 
-![https://user-images.githubusercontent.com/6697133/117116664-4182bf80-adac-11eb-8c72-d2c45f952a4b.png](https://user-images.githubusercontent.com/6697133/117116664-4182bf80-adac-11eb-8c72-d2c45f952a4b.png)
+![image](https://user-images.githubusercontent.com/6697133/117449111-3753f300-af5d-11eb-8688-4e36fc05a9bd.png)
 
 # External Integrations
 
